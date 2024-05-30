@@ -1,1 +1,13 @@
-<h1> uavs page</h1>
+
+<head>
+    <title>UAV List</title>
+</head>
+<body>
+    <h1> UAV List </h1>
+    <ul>
+        {% for uav in uavs %}
+            <li>{{ uav.uavName }} {{ uav.brand.name }} {{ uav.model }} {{ uav.weight }} kg {{ uav.category.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
